@@ -50,7 +50,11 @@ public class EditorPanel extends JPanel {
                             roads.add(new Road(Integer.toString(roads.size()), 1, 50, new int[]{xValue,
                                     yValue}, Road.Orientation.VERTICAL));
                     }
-                    String[] connectionOptions = new String[30];
+
+
+                    // improve connection roads
+                    int roadsSize = roads.size()-1;
+                    String[] connectionOptions = new String[roadsSize];
                     for (int i = 0; i < connectionOptions.length; i++) {
                         connectionOptions[i] = Integer.toString(i);
                     }
