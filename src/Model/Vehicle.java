@@ -50,10 +50,12 @@ public abstract class Vehicle {
         //red light check:
         if (speed == STOPPED) { //intentionally left empty
         } else {
-            if (!currentRoad.getLightsOnRoad().isEmpty() && nextPosition + 1 >= currentRoad.getLightsOnRoad().get(0).getPosition() && this.currentRoad.getLightsOnRoad().get(0).getState().equals("red")) {
+            // has light && has distance $$ light is red
+            if (!currentRoad.getLightsOnRoad().isEmpty() && nextPosition >= currentRoad.getLightsOnRoad().get(0).getPosition() && this.currentRoad.getLightsOnRoad().get(0).getState().equals("red")) {
                 speed = STOPPED;
             } else {
                 speed = currentRoad.getSpeedLimit();
+                //
                 if (currentRoad.getLength() <= nextPosition && !currentRoad.getConnectedRoads().isEmpty()) {
                     currentRoad.getVehiclesOnRoad().remove(this);
                     if (currentRoad.getConnectedRoads().size() > 1){

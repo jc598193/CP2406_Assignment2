@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28a8c4c4-b928-42cf-b0e8-8b5e3cc18306" name="Default Changelist" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="28a8c4c4-b928-42cf-b0e8-8b5e3cc18306" name="Default Changelist" comment="Updated road connections dialog">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/View/EditorPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/View/EditorPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CP2406_Assignment2_LeXuanHoang/View/EditorPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CP2406_Assignment2_LeXuanHoang/View/EditorPanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CP2406_Assignment2_LeXuanHoang/View/EditorPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CP2406_Assignment2_LeXuanHoang/View/EditorPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Model/Vehicle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/Vehicle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +29,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Assignment task 1/CP2406_Assignment1_LeXuanHoang/CP2406_Assignment1" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RunManager">
@@ -61,7 +62,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609843161289</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updated road connections dialog">
+      <created>1609948111647</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609948111647</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -90,6 +98,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Updated road connections dialog" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated road connections dialog" />
   </component>
 </project>
