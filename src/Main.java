@@ -124,9 +124,16 @@ public class Main {
 
         spawnItem.addActionListener(e -> {
             String spawnInput = JOptionPane.showInputDialog("Total number of Vehicles to spawn:");
+            while (spawnInput.isEmpty() || !spawnInput.matches("[0-9]+")){
+                spawnInput = JOptionPane.showInputDialog("Number of Simulation tics between spawns:");
+            }
             int spawns = Integer.parseInt(spawnInput);
             simulationPanel.setVehicleSpawn(spawns);
             String spawnRateInput = JOptionPane.showInputDialog("Number of Simulation tics between spawns:");
+//            while Integer.parseInt(spawnInput)
+            while (spawnRateInput.isEmpty() || !spawnRateInput.matches("[0-9]+")){
+                spawnRateInput = JOptionPane.showInputDialog("Number of Simulation tics between spawns:");
+            }
             int spawnRate = Integer.parseInt(spawnRateInput);
             simulationPanel.setVehicleSpawnRate(spawnRate);
         });

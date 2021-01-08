@@ -51,7 +51,8 @@ public abstract class Vehicle {
         if (speed == STOPPED) { //intentionally left empty
         } else {
             // has light && has distance $$ light is red
-            if (!currentRoad.getLightsOnRoad().isEmpty() && nextPosition >= currentRoad.getLightsOnRoad().get(0).getPosition() && this.currentRoad.getLightsOnRoad().get(0).getState().equals("red")) {
+//            !currentRoad.getLightsOnRoad().isEmpty() &&
+            if (nextPosition + 1>= currentRoad.getLightsOnRoad().get(0).getPosition() && this.currentRoad.getLightsOnRoad().get(0).getState().equals("red")) {
                 speed = STOPPED;
             } else {
                 speed = currentRoad.getSpeedLimit();
@@ -61,10 +62,13 @@ public abstract class Vehicle {
                     if (currentRoad.getConnectedRoads().size() > 1){
                         int nextRoadIndex = random.nextInt(2);
                         currentRoad = currentRoad.getConnectedRoads().get(nextRoadIndex);
+                    } else{
+                        currentRoad = currentRoad.getConnectedRoads().get(0);
+
                     }
-                    currentRoad = currentRoad.getConnectedRoads().get(0);
                     currentRoad.getVehiclesOnRoad().add(this);
                     position = START_POSITION;
+
                 } else if (currentRoad.getLength() >= nextPosition) {
                     position = (position + speed);
                 } else {
