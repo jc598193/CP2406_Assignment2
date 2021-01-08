@@ -63,8 +63,8 @@ public class EditorPanel extends JPanel {
                             null, connectionOptions, connectionOptions[0]);
                     roads.get(connectionSelection).getConnectedRoads().add(roads.get(roads.size() - 1));
                 }
-                for (Road road : roads) {
-                    lights.add(new TrafficLight("1", road));
+                for (int i = 0; i < roads.size(); i++) {
+                    lights.add(new TrafficLight(String.valueOf(i), roads.get(i)));
                 }
                 repaint();
             }

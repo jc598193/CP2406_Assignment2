@@ -24,7 +24,7 @@ public class TrafficLight {
         Random random = new Random(seed);
         double probability = random.nextDouble();
         //only changes if vehicles are present:
-        if (probability > CHANGE && !getRoadAttachedTo().getVehiclesOnRoad().isEmpty()) {
+        if (probability > CHANGE) {
             setState(RED);
         } else {
             setState(GREEN);
